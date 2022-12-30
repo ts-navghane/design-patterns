@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
+require_once __DIR__.'/../../vendor/autoload.php';
+
 use App\FactoryMethod\Facebook\FacebookPoster;
 use App\FactoryMethod\Instagram\InstagramPoster;
 use App\FactoryMethod\Linkedin\LinkedinPoster;
-
-require_once __DIR__.'/../../vendor/autoload.php';
 
 echo "Testing FacebookConnector:\n";
 (new FacebookPoster("tejas_navghane", "******"))
